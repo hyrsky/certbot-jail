@@ -16,8 +16,8 @@
 3. Log in to jail and run following commands
     ```sh
     pkg install py36-certbot py36-ansible py36-boto git
-    git clone git@github.com:hyrsky/certbot-jail.git
-    ~/certbot-jail/certonly <email> <domain>
+    git clone https://github.com/hyrsky/certbot-jail.git
+    certbot-jail/certonly <email> <domain>
     ```
 
 4. Then create cron job for renewing certificate
