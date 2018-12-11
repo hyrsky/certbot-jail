@@ -1,0 +1,4 @@
+#!/bin/sh
+
+certbot-3.6 renew --manual-auth-hook $HOME/hook.sh --manual-public-ip-logging-ok --preferred-challenges=dns
+

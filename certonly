@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ $? -ne 2 ]; then
+  echo "Usage $0 <email> <domain>"
+  exit 1
+fi
+
+certbot-3.6 certonly -m $1 --agree-tos \
+  --manual --manual-auth-hook $HOME/hook.sh --manual-public-ip-logging-ok \
+  --preferred-challenges=dns \
+  -d $2
+
