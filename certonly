@@ -4,8 +4,6 @@ cd "$(dirname $0)"
 
 HOOK_SCRIPT="$(pwd)/hook.sh"
 
-echo "$HOOK_SCRIPT"
-
 if [ $# -ne 2 ]; then
   echo "Usage $0 email domain"
   exit 1
